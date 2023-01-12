@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/cuacaListFragment">
+
+    <fragment
+        android:id="@+id/cuacaListFragment"
+        android:name="com.masungging.infocuaca.views.CuacaListFragment"
+        android:label="Informasi Cuaca" >
+        <action
+            android:id="@+id/action_cuacaListFragment_to_cuacaDetailFragment"
+            app:destination="@id/CuacaDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/CuacaDetailFragment"
+        android:name="com.masungging.infocuaca.views.CuacaDetailFragment"
+        android:label="Info Detail Cuaca"
+        tools:layout="@layout/fragment_cuaca_detail" />
+</navigation>
